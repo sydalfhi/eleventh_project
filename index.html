@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- !font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,700;1,9..144,900&display=swap"
+        rel="stylesheet">
+    <!-- !end font -->
+    <!-- ?icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- ?end icon -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        ::-webkit-scrollbar {
+            background-color: #3dbeff;
+        }
+
+        ::-webkit-scrollbar-track {
+            /* background-color: white; */
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            width: 10px;
+            background-color: white;
+            border-radius: 8px;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        Barlow: ['Barlow'],
+                        Fraunces: ['Fraunces'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<!-- -->
+
+<body class="bg-[#3dbeff] text-[18px]">
+    <nav class="flex justify-between  items-center px-7 my-2">
+        <h1 class="text-white font-bold text-3xl items-center ">sunnyside</h1>
+        <img src="images/icon-hamburger.svg" alt="hamburgermenu" class="md:hidden cursor-pointer hamburger">
+
+
+        <ul
+            class=" z-[9999] md:flex hidden md:w-[40%] md:justify-evenly md:relative absolute bg-white md:bg-transparent top-[80px] md:top-0 w-[90%] h-[50%] md:h-0 flex-col md:flex-row py-3 md:py-0   md:scale-100  rounded-lg">
+            <li class="m-auto text-center mb-12 md:mb-0 mt-3 md:mt-0"><a href="#"
+                    class="md:text-white text-slate-500 font-Barlow font-semibold capitalize text-xl">about</a>
+            </li>
+            <li class="m-auto text-center mb-12 md:mb-0"><a href="#"
+                    class="md:text-white text-slate-500 font-Barlow font-semibold capitalize text-xl">service</a>
+            </li>
+            <li class="m-auto text-center mb-12 md:mb-0"><a href="#"
+                    class="md:text-white text-slate-500 font-Barlow font-semibold capitalize text-xl">project</a>
+            </li>
+            <li class="m-auto text-center mb-12 md:mb-0"><a href="#"
+                    class="md:text-black text-slate-800 font-Barlow font-semibold   px-5 py-2  md:bg-white bg-yellow-400 rounded-full text-xl ">contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--  -->
+
+
+    <!-- todo first section  -->
+
+    <section class="firstSection relative">
+        <h1
+            class="text-white text-4xl md:text-5xl w-[70%] md:w-[40%] m-auto text-center mt-16 mb-28 font-Fraunces font-bold uppercase  z-50">
+            we are
+            creatives
+        </h1>
+        <!-- ? -->
+        <div class="w-full  m-auto  relative h-10">
+
+            <img src="icon-arrow-down.svg" alt="arrow_down"
+                class="block left-1/2 -translate-x-1/2 z-[100]   absolute  ">
+        </div>
+        <picture>
+            <source media="(min-width:768px )" srcset="images/desktop/image-header.jpg">
+            <img src="images/mobile/image-header.jpg" alt="gambarHeader" class="w-full ">
+        </picture>
+    </section>
+    <!-- todo end first section  -->
+
+
+
+
+
+
+
+
+    <!-- todo second sction -->
+    <section class="w-full mb-5 grid grid-cols-1 md:grid-cols-2 gr   ">
+        <!-- !TELUR -->
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/desktop/image-transform.jpg">
+            <img src="images/mobile/image-transform.jpg" alt="gambarTelur">
+        </picture>
+        <!-- !END TELUR -->
+        <!-- ?tulisan -->
+        <div
+            class="item1 w-full px-10 py-28 md:py-6  bg-white flex justify-center items-center flex-col md:col-start-1 md:row-start-1">
+            <h1 class="w-[70%] m-auto text-4xl font-Fraunces font-semibold text-center md:text-5xl">transforn your brand
+            </h1>
+            <p class="text-slate-500 font-semibold text-lg  my-12  md:my-0  m-auto text-center w-[70%] md:text-[22px]">
+                We are a
+                full-service
+                creative agency specializing
+                in
+                helping
+                brands grow fast.
+                Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <a href="#"
+                class="tombol1 bg-yellow-400  block m-auto text-center  rounded-full px-4 py-1 text-slate-50 font-semibold ">Learn
+                more</a>
+        </div>
+        <!-- ?tulisan -->
+        <!-- !gelas -->
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/desktop/image-stand-out.jpg">
+            <img src="images/mobile/image-stand-out.jpg" alt="gambargelas">
+        </picture>
+        <!-- !END gelas -->
+        <!-- !END TELUR -->
+        <!-- ?tulisan -->
+        <div class="item2 w-full px-10 py-28 md:py-0 bg-white flex justify-center items-center flex-col">
+            <h1 class="w-[70%] m-auto text-4xl  md:text-5xl font-Fraunces font-semibold text-center ">Stand out to the
+                right audience
+            </h1>
+            <p class="text-slate-500 font-semibold text-lg md:text-[22px] my-12   md:my-0 m-auto text-center w-[70%]">
+                We
+                are a
+                Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+                we’ll build and extend your brand in digital places.
+            </p>
+            <a href="#"
+                class="tombol1 bg-red-500 block m-auto text-center w-fit rounded-full px-4 py-1 text-slate-50 font-semibold ">Learn
+                more</a>
+        </div>
+        <!-- ?tulisan -->
+
+        <!--* ======================================================= -->
+        <div class="relative">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/desktop/image-graphic-design.jpg">
+                <img src="images/mobile/image-graphic-design.jpg" alt="gambar">
+                <h1
+                    class="text-[#25574e]  w-full font-semibold -translate-y-72 md:-translate-y-40 mb-3 text-4xl text-center font-Barlow capitalize">
+                    Graphic
+                    design
+                </h1>
+            </picture>
+
+            <p
+                class="text-[#25574e] w-full px-[30px]   -translate-y-72  md:-translate-y-40 font-semibold text-xl text-center font-Barlow ">
+                Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+                potential clients’ attention. </p>
+
+        </div>
+        <!--* ======================================================= -->
+        <!--* ======================================================= -->
+        <div class="relative -mt-[140px] md:-mt-[0px] z-10">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/desktop/image-photography.jpg">
+                <img src="images/mobile/image-photography.jpg" alt="photography">
+
+            </picture>
+            <h1
+                class="text-[#25574e]  w-full  font-semibold  -translate-y-72 md:-translate-y-40 mb-3 text-4xl text-center font-Barlow capitalize">
+                Photography
+            </h1>
+            <p
+                class="text-[#25574e] w-full px-[30px]   -translate-y-72  md:-translate-y-40    font-semibold text-xl text-center font-Barlow ">
+                Increase your credibility by getting the most stunning, high-quality photos that improve your business
+                image.
+            </p>
+
+        </div>
+        <!--* ======================================================= -->
+
+    </section>
+
+    <!-- todo end second sction -->
+
+
+
+
+
+
+    <!-- todo third section -->
+    <!-- grid grid-cols-1 md:grid-cols-3 -->
+    <h1 class="text-slate-900 w-full z-100 text-3xl bg-white pt-[50px] text-center -mt-[160px] font-Fraunces">Client
+        testimonials
+    </h1>
+    <section class=" grid grid-cols-1 md:grid-cols-3 gap-10 px-5 pt-[50px]  pb-[60px] bg-white z-50 w-full mt-[0px] ">
+        <div class="item1  w-full bg-white rounded-lg px-[30px] py-[35px] text-center ">
+            <img src="images/image-emily.jpg" alt="emely"
+                class="w-[25%] mb-10 rounded-full inline-block m-auto text-center">
+            <p class="text-slate-500 mb-10 font-semibold text-lg">We put our trust in Sunnyside and they delivered,
+                making
+                sure our
+                needs were met and deadlines were always hit.</p>
+            <h1 class="text-slate-900 font-semibold text-2xl font-Barlow">Emily R.</h1>
+            <p class="text-slate-500 text-sm font-semibold">Marketing Director</p>
+        </div>
+
+        <!-- ? -->
+        <div class="item1 w-full  bg-white rounded-lg px-[30px] py-[35px] text-center ">
+            <img src="images/image-thomas.jpg" alt="whomas"
+                class="w-[25%] mb-10 rounded-full inline-block m-auto text-center">
+            <p class="text-slate-500 mb-10 font-semibold text-lg">Sunnyside’s enthusiasm coupled with their keen
+                interest
+                in
+                our
+                brand’s success made it a satisfying and enjoyable experience.</p>
+            <h1 class="text-slate-900 font-semibold text-2xl font-Barlow">Thomas S.</h1>
+            <p class="text-slate-500 text-sm font-semibold">Chief Operating Officer</p>
+        </div>
+
+        <!-- ? -->
+
+        <div class="item1 w-full  bg-white rounded-lg px-[30px] py-[35px] text-center ">
+            <img src="images/image-jennie.jpg" alt="jenny"
+                class="w-[25%] mb-10 rounded-full inline-block m-auto text-center">
+            <p class="text-slate-500 mb-10 font-semibold text-lg">Incredible end result! Our sales increased over 400%
+                when we
+                worked with Sunnyside. Highly recommended!</p>
+            <h1 class="text-slate-900 font-semibold text-2xl font-Barlow">Jennie F.</h1>
+            <p class="text-slate-500 text-sm font-semibold">Business Owner</p>
+        </div>
+
+        <!-- ? -->
+
+
+    </section>
+    <!-- todo end third section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- todo fourth end third section -->
+    <section class="fourthSection grid grid-cols-2 md:grid-cols-4">
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/desktop/image-gallery-milkbottles.jpg">
+            <img src="images/mobile/image-gallery-milkbottles.jpg" alt="">
+        </picture>
+
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/desktop/image-gallery-orange.jpg">
+            <img src="images/mobile/image-gallery-orange.jpg" alt="">
+        </picture>
+
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/desktop/image-gallery-cone.jpg">
+            <img src="images/mobile/image-gallery-cone.jpg" alt="">
+        </picture>
+
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/desktop/image-gallery-sugarcubes.jpg">
+            <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+        </picture>
+    </section>
+
+    <!-- todo end fourth end third section -->
+
+
+
+
+
+    <!-- todo footer -->
+    <footer class="w-full h-[420px] bg-[#91d3c5]">
+        <h1 class="text-4xl font-bold text-[#2d7464] text-center pt-16">sunnyside</h1>
+        <ul class="my-[100px] flex justify-center item-center ">
+            <li><a href="#" class="text-xl font-bold text-[#2d7464] text-center mx-4 ">About</a></li>
+            <li><a href="#" class="text-xl font-bold text-[#2d7464] text-center mx-4 ">Services</a></li>
+            <li><a href="#" class="text-xl font-bold text-[#2d7464] text-center mx-4 ">Projects</a></li>
+        </ul>
+        <div class="flex justify-center item-center ">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" class="mx-4"
+                    alt=""></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/icon-instagram.svg" class="mx-4"
+                    alt=""></a>
+            <a href="https://www.twiter.com" target="_blank"><img src="images/icon-twitter.svg" class="mx-4" alt=""></a>
+            <a href="https://www.pinterest.com" target="_blank"><img src="images/icon-pinterest.svg" class="mx-4"
+                    alt=""></a>
+        </div>
+    </footer>
+
+
+    <!--  todo end footer -->
+
+
+    <script src="tailwind.config.js">
+
+    </script>
+    <script src="jquery.js"></script>
+    <script>
+        $(".hamburger").click(function (e) {
+            $("nav ul").fadeToggle(300);
+
+
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
