@@ -75,17 +75,17 @@
 
 
         <ul
-            class=" z-[9999] md:flex hidden md:w-[55%] lg:w-[50%] md:justify-evenly md:relative absolute bg-white md:bg-transparent top-[80px] md:top-0 w-[90%] m-auto -translate-x-3 sm:m-0 sm:-translate-x-0  h-[65%] md:h-0 flex-col md:flex-row py-3 md:py-0   md:scale-100  rounded-lg">
-            <li class="m-auto text-center mb-12 md:mb-0 mt-3 md:mt-0"><a href="#"
+            class=" z-[9999] md:flex flex  py-12 items-center justify-around flex-col absolute bg-[#fff]  top-[80px] m-auto -translate-x-3 sm:m-0 sm:-translate-x-0  h-[50%] md:h-0  md:py-0  md:scale-100  md:w-[55%] lg:w-[50%] md:flex-row   md:top-0 w-[90%] md:justify-evenly md:relative  rounded-lg">
+            <li class="m-auto text-center md:my-0 mt-3 md:mt-0"><a href="#"
                     class="md:text-white text-slate-500 font-Barlow font-semibold capitalize text-xl">about</a>
             </li>
-            <li class="m-auto text-center mb-12 md:mb-0"><a href="#"
+            <li class="m-auto text-center md:my-0"><a href="#"
                     class="md:text-white text-slate-500 font-Barlow font-semibold capitalize text-xl">service</a>
             </li>
-            <li class="m-auto text-center mb-12 md:mb-0"><a href="#"
+            <li class="m-auto text-center md:my-0"><a href="#"
                     class="md:text-white text-slate-500 font-Barlow font-semibold capitalize text-xl">project</a>
             </li>
-            <li class="m-auto text-center mb-12 md:mb-0"><a href="#"
+            <li class="m-auto text-center md:my-0"><a href="#"
                     class="md:text-black md:hover:bg-yellow-400 md:hover:text-white transition-all duration-200 text-slate-800 font-Barlow font-semibold   px-5 py-2  md:bg-white bg-yellow-400 rounded-full text-xl ">contact</a>
             </li>
         </ul>
@@ -352,11 +352,16 @@
     </script>
     <script src="jquery.js"></script>
     <script>
-        $(".hamburger").click(function (e) {
-            $("nav ul").fadeToggle(300);
+        $(document).ready(function () {
+            if (window.innerWidth <= 768) {
+                $("nav ul").fadeOut(0);
+                $(".hamburger").click(function (e) {
+                    $("nav ul").fadeToggle(300);
 
 
-            e.preventDefault();
+                    e.preventDefault();
+                });
+            }
         });
     </script>
 </body>
